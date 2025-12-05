@@ -4,7 +4,7 @@ This project implements an automated Policy Compliance Checker using Google Gemi
 
 Project Features
 
-Rule File (15+ Rules)
+1.Rule File (15+ Rules)
 A structured JSON rule-set containing all policy rules such as:
 
 Accuracy requirements
@@ -17,7 +17,7 @@ Medical claims restrictions
 
 Data privacy rules
 
-PDF Ingestion + Vector Store Pipeline
+2. PDF Ingestion + Vector Store Pipeline
 The system:
 
 Loads PDF files
@@ -45,7 +45,7 @@ Example output:
 
 { "rule_id": "R1", "is_compliant": true, "explanation": "No harmful medical advice found." }
 
-Multi-Rule Agent Workflow
+4. Multi-Rule Agent Workflow
 Your system:
 
 Iterates through each rule
@@ -53,11 +53,6 @@ Iterates through each rule
 Applies Gemini-based reasoning
 
 Produces a final compliance report
-
-Comparison Table
-The notebook produces a table showing:
-
-Compliant vs. non-compliant sections
 
 Evidence chunks
 
@@ -71,9 +66,8 @@ Project Structure task2/ │ ├── rules.json # Contains 15+ policy rules �
 
 Installation
 
-Create virtual environment python -m venv venv
-Activate Windows: venv\Scripts\activate
-Install dependencies pip install -r requirements.txt Running the Project Run Ingestion python ingest.py
+1.Create virtual environment python -m venv venv
+2.Activate Windows: venv\Scripts\activate
+3.Install dependencies pip install -r requirements.txt Running the Project Run Ingestion python ingest.py
 Run Compliance Checker python compliance_checker.py
-
 Run Streamlit App python -m streamlit run app.py
